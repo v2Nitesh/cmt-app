@@ -1,0 +1,66 @@
+.holidayListPopup {
+    width: 90%;
+    margin: 0 auto 2%;
+
+    >.MuiBox-root {
+        h2.MuiTypography-root {
+            margin-bottom: 0px;
+        }
+
+        .MuiButtonBase-root {
+            svg {
+                color: $textColor;
+
+                &[data-testid="CheckBoxOutlineBlankSharpIcon"] {
+                    border: 1px solid rgba(73, 67, 66, .6);
+                    width: 17px;
+                    height: 17px;
+
+                    path {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .detailsWrapper {
+        .customCheckbox {
+            padding: 0;
+            margin-left: 8px;
+            margin-bottom: 3px;
+
+            .customCheckbox svg {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .FooterNotes {
+        .MuiDivider-root {
+            margin-bottom: 25px;
+            margin-top: 0px;
+        }
+
+        .leavenotesWrapper {
+            padding-bottom: 10px;
+
+            &:last-child {
+                padding-bottom: 0px;
+            }
+
+            h4.MuiTypography-root {
+                font-weight: 600;
+                font-size: 16px;
+            }
+        }
+    }
+
+}
+
+.holidayListPopup .detailsWrapper .mb-4 {
+                margin-bottom: 4px;
+}
+.iconColor {
+    color: #FAB03B;
+}

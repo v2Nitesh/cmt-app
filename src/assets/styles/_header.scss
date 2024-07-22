@@ -1,0 +1,107 @@
+header {
+    border-bottom: 1px solid rgb(45 129 173 / 20%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+    background: #fff;
+
+    .headerWrapper {
+        padding: 10px 0 9px 12px;
+
+        @media (max-width: 576px) {
+            padding: 5px 0 4px 7px;
+        }
+
+        .logoWrapper {
+            img {
+                margin: 0 0 -6px;
+            }
+
+            .desktopLogo {
+                @media (max-width: 767px) {
+                    display: none;
+                }
+            }
+
+            .mobileLogo {
+                display: none;
+
+                @media (max-width: 767px) {
+                    display: block;
+                }
+            }
+        }
+
+        ul {
+            justify-content: end;
+
+            li {
+                flex: 0;
+
+                &:first-child {
+                    padding: 0 15px 0 10px;
+
+                    &::after {
+                        border-right: 1px solid;
+                        content: "|";
+                        position: absolute;
+                        width: 1px;
+                        height: 20px;
+                        color: $bordercolor;
+                        right: 0;
+                    }
+                }
+
+                &:nth-child(2) {
+                    padding: 0 5px 0 15px;
+                }
+
+                .headerProfilePic {
+                    width: 38px;
+                    height: 38px;
+                }
+            }
+        }
+    }
+}
+
+.profileMenuWrapper {
+    ul {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        min-width: 300px;
+
+        .menuItems {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgb(16 59 101 / 10%);
+
+            >svg {
+                color: rgb(73 73 73 / 70%);
+                margin-right: 10px;
+                font-size: 20px;
+            }
+
+            .ProfilePicture {
+                padding-left: 15px;
+
+                @media (max-width: 576px) {
+                    padding-left: 5px;
+                }
+
+                .MuiAvatar-root {
+                    width: 90px;
+                    height: 90px;
+
+                    @media (max-width: 576px) {
+                        width: 50px;
+                        height: 50px;
+                    }
+
+                }
+            }
+
+        }
+    }
+}

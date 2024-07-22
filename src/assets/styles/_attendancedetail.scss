@@ -1,0 +1,343 @@
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 25px;
+
+  .selected-filters-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+.chip {
+  font-size: 14px;
+  border: 1px solid grey;
+
+  &.selected {
+    background-color: white;
+    margin-bottom: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 16px;
+  }
+
+  .MuiChip-label {
+    font-size: 14px;
+  }
+
+  .MuiChip-deleteIcon {
+    color: grey;
+  }
+}
+
+.filter-dropdown {
+  position: absolute;
+  right: 20px;
+  // top: 65px;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 16px;
+  z-index: 1;
+  min-width: 432px;
+  height: 244px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+.gap-16 {
+  .MuiTypography-root {
+    margin-right: 20px;
+  }
+}
+
+.gap-16 {
+  .MuiTypography-root span {
+    color: #f15a24;
+  }
+}
+
+.gap-16 button {
+  margin-left: 25px;
+  background-color: #f15a24;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.mb-24 {
+  .MuiFormControl-root {
+    margin-bottom: 16px;
+  }
+}
+.mb-16 {
+  .MuiChip-root {
+    margin-bottom: 16px;
+  }
+}
+
+.MuiStack-root.flex-Direction {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.textField {
+  .MuiInputBase-root {
+    background-color: transparent;
+  }
+}
+
+.chartsLabels {
+  .MuiChip-root {
+    border-radius: 4px;
+    height: 26px;
+  }
+}
+.inputMonth {
+  .MuiGrid-root {
+    margin-top: 20px;
+    // margin-bottom: 20px;
+  }
+}
+
+.mb-15 {
+  .MuiGrid-root {
+    margin-bottom: -15px;
+  }
+}
+
+.tableHeader {
+  .MuiDataGrid-columnHeaderTitle {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+.tableStyle {
+  .MuiDataGrid-root {
+    border-style: none !important;
+  }
+}
+
+.tableStyle {
+  .MuiDataGrid-cell {
+    border-style: none !important;
+  }
+}
+
+.table-header-color {
+  background-color: #ffffff !important;
+}
+
+.MuiDataGrid-root {
+  --DataGrid-containerBackground: white !important;
+  // border-color: blue !important;
+  /* Add more custom styles as needed */
+}
+
+.bottom-Border {
+  border-bottom: 1px solid #d3d3d3;
+  padding-bottom: 0.5em;
+}
+
+.top-Border-5 {
+  border-top: 1px solid #d3d3d3;
+  // padding-bottom: 5em;
+}
+
+.MuiChip-root.border {
+  border: 1px solid;
+}
+
+.MuiChip-root.color {
+  color: #ffffff;
+}
+.MuiBox-root.mt-2 {
+  margin-top: 16px;
+}
+
+.MuiGrid-root .h-400 {
+  height: 400px;
+}
+
+.MuiGrid-root.mb-40 {
+  margin-bottom: 40px;
+}
+
+.MuiTypography-root.fw-700 {
+  font-weight: 700;
+}
+
+.datePickerBorder fieldset {
+  border: none;
+  border-bottom: 1px solid #d3d3d3;
+  border-radius: 0;
+}
+
+.datePickerBorder input {
+  padding: 12.5px 14px !important;
+}
+.opacity-50 {
+  opacity: 50%;
+}
+
+.MuiTypography-root a {
+  color: #f15a24;
+  text-decoration: none;
+}
+
+.dashed-border {
+  width: 100%;
+  border-top: 1px dashed #000;
+  margin: 0 10px;
+}
+.timeWrapper {
+  position: relative;
+}
+
+.timeWrapper::after {
+  content: "Now";
+  position: absolute;
+  top: -20px;
+  font-size: 12px;
+  right: 45px;
+  opacity: 70%;
+}
+
+.timeWrapper::before {
+  content: "Signed in";
+  position: absolute;
+  top: -20px;
+  font-size: 12px;
+  opacity: 0.7; /* Opacity should be a value between 0 and 1 */
+}
+
+.MuiTypography-root.timeSpan {
+  color: #979797;
+  opacity: 50%;
+}
+
+.MuiTypography-root.timeSpan1 {
+  color: #494949;
+  opacity: 49%;
+}
+
+.MuiTypography-root.timeSpan2 {
+  color: #494342;
+  opacity: 47%;
+}
+
+.MuiGrid-root.filterRow {
+  flex-direction: row-reverse;
+}
+
+.MuiGrid-root .datePicker {
+  max-width: 200px;
+  margin-left: 40%;
+}
+
+.MuiGrid-root.ml-7 {
+  margin-left: 7px;
+}
+
+.MuiGrid-root.attendanceChart {
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.Labels {
+  justify-content: space-around;
+}
+
+.Labels .MuiBox-root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter-container .MuiButton-root {
+  color: #494949;
+}
+
+.Labels .presentLbl {
+  color: #8da408;
+}
+
+.Labels .absentLbl {
+  color: #f93e3e;
+}
+
+.Labels .leavesLbl {
+  color: #d87c43;
+}
+
+.Labels .remainLbl {
+  color: #a5a5a5;
+}
+
+.tableHeader {
+  .MuiDataGrid-topContainer::after {
+    content: none;
+  }
+  .MuiDataGrid-filler > div {
+    border-top: 0;
+  }
+}
+
+.MuiDataGrid-root {
+  .MuiDataGrid-withBorderColor {
+    border-color: transparent !important;
+  }
+}
+
+.Labels .remainingLbl {
+  color: #a5a5a5;
+}
+
+.Labels .holidayLbl {
+  color: #c96cc5;
+}
+
+.MuiGrid-root.filterContent {
+  height: 72px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.MuiGrid-root .filterPopupBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  margin-top: 0;
+  height: 50px;
+}
+.MuiGrid-root .actionBtn {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.filterInput .MuiSelect-select {
+  padding: 0 0 6px 0;
+  font-size: 14px;
+}
+
+.selected-filters-container.filterValues {
+  display: flex;
+  justify-content: center;
+  margin: 0 68px 16px 0;
+}
+
+.datePickerBody {
+  margin-bottom: -100px;
+  position: relative;
+  bottom: -56px;
+  padding-right: 90px;
+}

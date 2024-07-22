@@ -1,0 +1,457 @@
+.cardWrapper {
+  padding: 0 28px;
+  flex: 0 0 33.33%;
+  margin-bottom: 50px;
+  justify-content: space-between;
+
+  @media (max-width: 1365px) {
+    padding: 0 28px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 1279px) {
+    padding: 0 10px;
+  }
+
+  @media (max-width: 1199px) {
+    flex: 0 0 50%;
+    margin-bottom: 40px;
+    padding: 0 15px;
+  }
+
+  @media (max-width: 991px) {
+    flex: 0 0 100%;
+  }
+
+  @media (max-width: 576px) {
+    padding: 0px;
+  }
+
+  &:first-child,
+  &:nth-child(3n + 1) {
+    padding-left: 0px;
+  }
+
+  &:nth-child(3n + 1) {
+    @media (max-width: 1199px) {
+      padding-left: 15px;
+    }
+
+    @media (max-width: 576px) {
+      padding-left: 0px;
+    }
+  }
+
+  &:nth-child(3n) {
+    padding-right: 0px;
+    border-right: none;
+
+    @media (max-width: 1199px) {
+      padding-right: 15px;
+    }
+    //
+    @media (max-width: 991px) {
+      padding-right: 15px;
+    }
+
+    @media (max-width: 576px) {
+      padding: 0px;
+    }
+  }
+
+  &:first-child,
+  &:nth-child(2) {
+    border-right: 1px solid $bordercolor;
+
+    @media (max-width: 1199px) {
+      border-right: none;
+    }
+  }
+
+  &.ButtonCards {
+    @media (max-width: 576px) {
+      flex-wrap: wrap;
+    }
+
+    .MuiButtonBase-root {
+      @media (max-width: 1279px) {
+        padding-left: 17px;
+        padding-right: 17px;
+      }
+
+      @media (max-width: 991px) {
+        min-width: 120px;
+      }
+
+      @media (max-width: 576px) {
+        min-width: 110px;
+        padding: 5px 0;
+      }
+    }
+
+    .MuiCardActions-root {
+      @media (max-width: 480px) {
+        width: calc(100% - 85px);
+        margin-left: auto;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .CardImage {
+    width: 105px;
+    height: 111px;
+    border-radius: 34px;
+
+    @media (max-width: 1365px) {
+      width: 95px;
+      height: 100px;
+    }
+
+    @media (max-width: 1279px) {
+      height: 85px;
+      width: 80px;
+    }
+  }
+
+  .cardHeader {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+
+    h2 {
+      margin-bottom: 0px;
+      font-size: 18px;
+    }
+  }
+
+  .cardContentWrapper {
+    padding: 15px 0;
+    align-items: center;
+  }
+
+  .contentWrapper {
+    min-width: 165px;
+    text-align: left;
+    padding-left: 15px;
+
+    @media (max-width: 1279px) {
+      padding-left: 10px;
+    }
+
+    h2.MuiTypography-root {
+      font-size: 18px;
+    }
+
+    .attendanceTimings {
+      padding: 3px 0 0;
+
+      li {
+        padding: 0 7px;
+
+        &:first-child {
+          padding-left: 0px;
+
+          &::after {
+            content: "";
+            color: rgba(16, 59, 101, 0.25);
+            font-size: 12px;
+            position: absolute;
+            right: 5px;
+            width: 1px;
+            border-right: 1px solid;
+            height: 14px;
+          }
+        }
+
+        &:last-child {
+          padding-right: 0px;
+        }
+      }
+    }
+
+    .infoWrapper {
+      min-height: 50px;
+    }
+  }
+
+  .approvalListWrapper {
+    padding: 5px 0 15px;
+
+    .approvalList {
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 3px 0;
+
+      li {
+        flex: 0 0 42%;
+        justify-content: space-between;
+        padding: 12px 0;
+
+        @media (max-width: 576px) {
+          flex: 0 0 100%;
+        }
+
+        &:last-child {
+          padding-bottom: 0px;
+        }
+
+        .titleWrapper {
+          svg {
+            font-size: 22px;
+            color: #494949;
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+            opacity: 94%;
+          }
+
+          h2 {
+            font-weight: 500;
+            font-size: 14px;
+            margin: 0px;
+          }
+        }
+
+        .MuiChip-root {
+          height: auto;
+
+          @media (max-width: 576px) {
+            min-width: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .allocationList {
+    overflow-y: auto;
+    max-height: 160px;
+    padding: 3px 0;
+
+    li {
+      padding-bottom: 20px;
+      align-items: center;
+
+      .allocationPercentage {
+        width: 66px;
+        height: 66px;
+        background-color: transparent;
+        color: #494949;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        font-size: 20px;
+      }
+
+      .titleWrapper {
+        width: calc(100% - 80px);
+
+        h2 {
+          font-size: 14px;
+          margin-bottom: 2px;
+          line-height: 1.4;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .LeavesWrapper {
+    @media (max-width: 576px) {
+      flex-wrap: wrap;
+    }
+
+    .LeaveBalance {
+      width: 25%;
+      text-align: center;
+      padding-left: 25px;
+
+      @media (max-width: 576px) {
+        width: 100%;
+        padding-bottom: 5px;
+      }
+
+      h2 {
+        font-size: 40px;
+        font-weight: 400;
+        margin: 0;
+        line-height: 1.3;
+      }
+    }
+
+    .LeaveList {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 58%;
+      padding: 3px 0;
+
+      @media (max-width: 576px) {
+        width: 100%;
+      }
+
+      li {
+        padding: 4px 0;
+        width: calc(50% - 20px);
+
+        h2 {
+          font-size: 24px;
+          font-weight: 400;
+          margin-bottom: 0;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .LeaveList {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 58%;
+
+    li {
+      padding: 4px 0;
+      width: calc(50% - 20px);
+
+      h2 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 0;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .TeamMembers {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    flex-wrap: wrap;
+
+    h2 {
+      font-size: 40px;
+      font-weight: 400;
+      margin: 0 5px 0 0;
+      line-height: 1.3;
+    }
+  }
+
+  .TeamMembersPictures {
+    .MuiAvatar-root {
+      width: 44px;
+      height: 44px;
+      margin: 0 7px 9px 0;
+      border: 1px solid #d8d8d8;
+
+      @media (max-width: 1440px) {
+        width: 44px;
+        height: 44px;
+      }
+
+      @media (max-width: 1280px) {
+        width: 60px;
+        height: 60px;
+      }
+
+      @media (max-width: 576px) {
+        height: 44px;
+        width: 44px;
+      }
+    }
+  }
+
+  .upcomingHolidays {
+    border-radius: 8px;
+    border: 1px solid rgb(16 59 101 / 15%);
+    padding: 8px 16px 0 16px;
+    margin-top: 0;
+    text-align: left;
+
+    @media (max-width: 576px) {
+      flex-wrap: wrap;
+    }
+
+    .MuiChip-root {
+      .MuiChip-label {
+        padding-left: 0px;
+      }
+    }
+
+    .MuiBox-root {
+      width: 70%;
+
+      @media (max-width: 480px) {
+        width: 100%;
+      }
+
+      h2 {
+        font-size: 14px;
+        margin-bottom: 0px;
+      }
+
+      ul {
+        li {
+          width: auto;
+          padding-right: 15px;
+
+          &:last-child {
+            padding-right: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  .progressbarWrapper {
+    padding: 8px 0;
+
+    h3 {
+      width: 35%;
+      text-align: left;
+      font-size: 14px;
+
+      @media (max-width: 480px) {
+        width: 45%;
+      }
+    }
+
+    .ProgressBar {
+      width: 65%;
+
+      @media (max-width: 480px) {
+        width: 55%;
+      }
+
+      .progessBarProgress {
+        border-radius: 5px;
+        height: 4px;
+      }
+
+      h3 {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.upcomingHolidayWrapper {
+  padding: 3px 0;
+}
+
+.cardHeader {
+  .MuiChip-label {
+    padding: 0;
+  }
+}
+
+.approvalChip {
+  .MuiChip-label {
+    padding-top: 1px;
+  }
+}

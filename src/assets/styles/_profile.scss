@@ -1,0 +1,323 @@
+.MuiGrid-root.myProfileWrapper {
+  .MuiGrid-item {
+    @media (max-width: 600px) {
+      max-width: 100%;
+      flex-basis: 100%;
+    }
+  }
+
+  .scrollbarWrapper {
+    max-height: 400px;
+    overflow-y: auto;
+
+    .ProfessionalDetailWrapper {
+      margin-bottom: 55px;
+      padding-right: 10px;
+
+      &.experienceWrapper {
+        margin-bottom: 0px;
+      }
+
+      .ProfessionalHeading {
+        margin-bottom: 24px;
+
+        h3 {
+          color: $headingColor;
+          font-weight: 600;
+          padding-bottom: 5px;
+        }
+
+        .MuiButton-root {
+          padding-right: 0;
+          min-width: auto;
+        }
+      }
+
+      .skillsHeading {
+        h3 {
+          color: $headingColor;
+          font-weight: 600;
+          padding-bottom: 5px;
+        }
+
+        .MuiButton-root {
+          padding-right: 0;
+          min-width: auto;
+        }
+      }
+
+      .competencyWrapper {
+        padding-top: 12px;
+
+        .competencyContentWrapper {
+          border: 1px solid #E7EBEF;
+          padding: 15px;
+          margin: 2px 0px 20px;
+        }
+      }
+    }
+  }
+}
+
+.previousExperienceWrapper {
+  margin: 25px 0 54px;
+  padding-right: 10px;
+  position: relative;
+
+  h5 {
+    margin-bottom: 0px;
+  }
+
+  .experienceAdditionWrapper {
+    background: #f8f9fa;
+    border: 1px solid #dbe2e8;
+    border-radius: 8px;
+    margin: 10px 0 20px;
+    padding: 20px;
+
+    .btnWrapper {
+      text-align: right;
+      position: absolute;
+      top: 0;
+      right: 15px;
+
+      button {
+        padding: 0px;
+      }
+    }
+
+    .MuiInputLabel-root {
+      letter-spacing: 0.47px;
+      top: -10px;
+
+      &.MuiInputLabel-shrink {
+        top: 0px;
+      }
+    }
+
+    .MuiInputBase-root {
+      color: rgba(73, 73, 73, .7);
+
+      &:before {
+        color: rgba(73, 73, 73, .7);
+      }
+    }
+
+    h4.MuiTypography-root {
+      margin-bottom: 0px;
+    }
+  }
+
+  .ExperienceScrollar {
+    // overflow-y: auto;
+    // max-height: 365px;
+    margin-top: 5px;
+
+    .previousExperienceWrap {
+      border: 1px solid #dbe2e8;
+      margin-bottom: -1px;
+      padding: 22px 15px;
+      position: relative;
+
+      @media (max-width: 767px) {
+        padding: 30px 15px 20px;
+      }
+
+      .btnWrapper {
+        padding-bottom: 0;
+        text-align: right;
+        position: absolute;
+        right: 15px;
+        top: 5px;
+
+        button {
+          padding: 0px;
+        }
+      }
+    }
+  }
+
+}
+
+.profileSidebar {
+  ul {
+    @media (max-width:600px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    li {
+      @media (max-width:600px) {
+        width: auto;
+        padding: 0 15px 0 0px;
+      }
+
+      .sidebarLink {
+        color: $textColor;
+        padding: 8px 0;
+        min-width: auto;
+        font-weight: 400;
+        display: block;
+        text-align: left;
+
+        &:hover {
+          background: transparent;
+          font-weight: 600;
+          color: $headingColor;
+        }
+
+        &.activeSection {
+          font-weight: 600;
+          color: $headingColor;
+        }
+      }
+
+      &.listLabel {
+        padding-bottom: 7px;
+
+        @media (max-width:600px) {
+          width: 100%;
+        }
+
+        p {
+          font-size: 12px;
+          font-weight: 300;
+          color: $textColor;
+        }
+      }
+    }
+
+  }
+}
+
+.btnWrapper {
+  button {
+    &:first-child {
+      margin-right: 15px;
+    }
+  }
+}
+
+.ProfessionalDetailWrapper {
+  .skillAdditionWrapper {
+    background: #F8F9FA;
+    border: 1px solid #DBE2E8;
+    padding: 10px 10px 20px;
+    border-radius: 0px;
+    box-shadow: 0px 0px 7px rgb(0 0 0 / 14%);
+    margin: 3px;
+
+    h4 {
+      font-weight: 600;
+      padding-bottom: 3px;
+    }
+  }
+
+  .skillMainWrapper {
+    border: 1px solid #E7EBEF;
+    border-radius: 0px;
+    position: relative;
+    padding: 8px;
+
+    &:hover {
+      .deleteButton {
+        visibility: visible;
+      }
+    }
+
+    .ratingBox {
+      svg {
+        color: #0c1e59;
+        margin: 0 1px;
+      }
+
+      p {
+        margin-left: 5px;
+      }
+    }
+
+    .deleteButton {
+      padding: 0;
+      visibility: hidden;
+
+      &:hover {
+        background: transparent;
+      }
+    }
+  }
+}
+
+.editableSkillWrapper {
+  h6 {
+    margin-bottom: 7px;
+    margin-top: 8px;
+    color: rgb(73 67 66 / 70%);
+  }
+
+  .ratingBox {
+    svg {
+      color: #0c1e59;
+      margin: 0 1px;
+    }
+  }
+
+  p {
+    margin-left: 15px;
+    line-height: 1.1;
+  }
+}
+
+.skillRatingsTooltip {
+  h4 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    letter-spacing: 0.2px;
+  }
+
+  .ratingWrapper {
+    margin-bottom: 10px;
+
+    svg {
+      font-size: 18px;
+      margin: 0 2px;
+    }
+
+    p {
+      padding-left: 10px;
+    }
+  }
+}
+
+.sideBar {
+  @media (max-width:600px) {
+      display: none;
+      // flex-wrap: wrap;
+    }
+}
+
+.MuiGrid-item {
+    @media (max-width: 600px) {
+  padding-top: 0;
+    }
+  }
+
+.MuiTabs-scroller {
+  .MuiTabs-indicator{
+    background-color: #103B65;
+    width: 96px;
+    height: 0.9px;
+  }
+}
+
+.tabsWrapper.profileBtn .MuiButtonBase-root {
+   font-weight: 600;
+   color: #494342;
+
+}
+
+.btnWrapper.addBtn button {
+  margin-right: 0;
+
+}

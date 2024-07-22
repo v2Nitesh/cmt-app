@@ -1,0 +1,336 @@
+.tabsWrapper {
+  border-bottom: 1px solid;
+  border-color: rgba(0, 0, 0, 0.12);
+  padding: 0px;
+
+  .MuiTabs-scrollButtons {
+    width: 20px;
+  }
+
+  .MuiButtonBase-root {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(73 67 66 / 70%);
+    // padding-left: 3px;
+    // padding-right: 3px;
+    margin: 0 15px;
+    min-width: 65px;
+
+    @media (max-width: 991px) {
+      margin: 0 8px;
+      font-size: 15px;
+    }
+
+    @media (max-width: 767px) {
+      margin: 0 10px;
+      padding-left: 1px;
+      padding-right: 1px;
+      min-width: auto;
+      font-size: 14px;
+    }
+
+    &:first-child {
+      margin-left: 0px;
+    }
+  }
+
+  .MuiTabs-scrollButtons.Mui-disabled {
+    opacity: 0.3;
+  }
+}
+
+.TeamMemberWrapper {
+  flex-wrap: wrap;
+
+  .TeamMember {
+    width: calc(100% / 3);
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding-right: 20px;
+    box-shadow: none;
+
+    @media (max-width: 1199px) {
+      padding-right: 10px;
+    }
+
+    @media (max-width: 991px) {
+      width: calc(100% / 2);
+      margin-bottom: 35px;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 576px) {
+      width: calc(100%);
+      padding-right: 0px;
+    }
+
+    .memberDetailPopup {
+      font-size: 12px;
+      display: none;
+    }
+
+    &:hover {
+      .memberDetailPopup {
+        display: block;
+      }
+    }
+
+    &:nth-child(2n) {
+      @media (max-width: 991px) {
+        padding-right: 0px;
+      }
+    }
+
+    .MuiAvatar-root {
+      width: 100px;
+      height: 100px;
+
+      @media (max-width: 1199px) {
+        width: 80px;
+        height: 80px;
+      }
+
+      @media (max-width: 767px) {
+        width: 50px;
+        height: 50px;
+      }
+
+      @media (max-width: 576px) {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    > .MuiBox-root {
+      width: calc(100% - 120px);
+
+      @media (max-width: 1199px) {
+        width: calc(100% - 90px);
+      }
+
+      @media (max-width: 767px) {
+        width: calc(100% - 60px);
+      }
+
+      @media (max-width: 576px) {
+        width: calc(100% - 70px);
+      }
+
+      h3.MuiTypography-root {
+        margin-bottom: 0px;
+        line-height: 1.3;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      h4.MuiTypography-root {
+        font-weight: 400;
+        margin-bottom: 8px;
+        font-size: 12px;
+      }
+
+      h5.MuiTypography-root {
+        font-weight: 500;
+        font-size: 14px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.memberDetailPopupWrapper {
+  max-width: 552px;
+
+  @media (max-width: 767px) {
+    width: 95%;
+  }
+
+  @media (max-width: 767px) {
+    padding: 15px !important;
+  }
+
+  > .MuiBox-root {
+    @media (max-width: 400px) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+
+    h2.MuiTypography-root {
+      margin-bottom: 0px;
+    }
+  }
+
+  .TeamMember {
+    margin-top: 15px;
+    margin-bottom: 24px;
+
+    > .MuiAvatar-root {
+      width: 100px;
+      height: 100px;
+
+      @media (max-width: 576px) {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    > .MuiBox-root {
+      width: calc(100% - 115px);
+
+      @media (max-width: 576px) {
+        width: calc(100% - 80px);
+      }
+
+      h4.MuiTypography-root {
+        font-weight: 500;
+        line-height: 1.1;
+        font-size: 14px;
+      }
+
+      h3.MuiTypography-root {
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      h5.MuiTypography-root {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .MuiGrid-root {
+    h4.MuiTypography-root {
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    h5.MuiTypography-root {
+      padding-top: 5px;
+      font-size: 12px;
+    }
+  }
+}
+
+.ContactDetails.MuiGrid-root {
+  margin-top: 0px;
+  margin-bottom: 24px;
+
+  .MuiGrid-item {
+    &:nth-child(2) {
+      @media (max-width: 576px) {
+        padding-top: 4px;
+      }
+    }
+  }
+}
+
+.actionWrapper {
+  @media (max-width: 400px) {
+    align-self: end;
+  }
+
+  .paginationWrapper {
+    @media (max-width: 576px) {
+      align-self: flex-end;
+    }
+
+    .paginationNumberSpacer {
+      margin: 0 5px;
+    }
+  }
+}
+
+.tabsWrapper .MuiTabs-hideScrollbar {
+  display: flex;
+  justify-content: center;
+}
+
+.MuiSelect-select span {
+  color: #909090;
+  font-size: 14px;
+}
+
+.MuiFormControl-root .MuiButtonBase-root .searchBtn {
+  background-color: #f15a24;
+  color: #ffffff;
+}
+
+.MuiBox-root .selectEmp {
+  margin-bottom: 5px;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  .selected-filters-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+.filter-dropdown {
+  position: absolute;
+  right: 20px;
+  // top: 65px;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 16px;
+  z-index: 1;
+  min-width: 432px;
+  height: 244px;
+}
+
+.MuiGrid-root.filterContent {
+  height: 72px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  text-align: left;
+}
+
+.MuiGrid-root .filterPopupBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  margin-top: 0;
+  height: 50px;
+}
+.MuiGrid-root .actionBtn {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.selected-filters-container.m-filterValues {
+  display: flex;
+  justify-content: center;
+  margin: 12px 0;
+
+  ul:last-child .MuiChip-root {
+    margin-right: 0;
+  }
+}
+
+.m-filterValues .MuiPaper-root {
+  gap: 5px;
+}
+
+.MuiGrid-root .m-datepicker {
+  margin-left: 44.5%;
+  max-width: 200px;
+}
+
+.borderStyle {
+  .MuiDataGrid-scrollbar {
+    z-index: 0;
+  }
+}

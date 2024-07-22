@@ -1,0 +1,74 @@
+.MuiGrid-root {
+  .buttonGroup {
+    height: 29px;
+  }
+}
+
+.buttonGroup {
+  .MuiToggleButton-root.Mui-selected {
+    color: #ffffff;
+    background-color: #103b65;
+  }
+}
+.buttonGroup {
+  .MuiButtonBase-root {
+    padding: 6px 24px;
+    text-transform: none;
+    border-color: #494949;
+    border-radius: 8px;
+  }
+}
+
+.MuiGrid-root .mb-20 {
+  margin-bottom: 20px;
+}
+
+.MuiGrid-root {
+  .borderStyle {
+    border: 0 !important;
+    background-color: transparent !important;
+  }
+}
+
+.borderStyle {
+  .MuiDataGrid-footerContainer {
+    border: 0;
+  }
+}
+
+.borderStyle .MuiDataGrid-cell {
+  border-top: 0 !important;
+}
+
+.MuiDataGrid-topContainer {
+  &:after {
+    display: none;
+  }
+}
+
+// .MuiDataGrid-root {
+//   .MuiDataGrid-container--top [role=row], {
+//     background: none;
+//   }
+// }
+
+.MuiDataGrid-columnHeaders {
+  .MuiDataGrid-columnHeaderRow {
+    background: none;
+  }
+}
+.borderStyle {
+  .MuiDataGrid-cellCheckbox {
+    align-items: start !important;
+
+    span {
+      padding-top: 15px;
+    }
+  }
+}
+.titleWrapper {
+  .MuiSvgIcon-root {
+    stroke: #ffffff;
+    stroke-width: 1;
+  }
+}

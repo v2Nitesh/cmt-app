@@ -1,0 +1,333 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  color: $textColor;
+  line-height: 1.4;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  p {
+    color: $textColor;
+  }
+
+  h2.MuiTypography-root {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: $headingColor;
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+  }
+
+  h3.MuiTypography-root {
+    font-size: 18px;
+  }
+
+  h4.MuiTypography-root {
+    font-size: 16px;
+  }
+
+  h5.MuiTypography-root {
+    font-size: 14px;
+  }
+
+  h6.MuiTypography-root {
+    font-size: 12px;
+  }
+
+  .appBoxWrapper {
+    @include flexbox;
+    position: relative;
+
+    .mainContent {
+      padding: 25px;
+      width: calc(100% - 55px);
+      margin-left: auto;
+      margin-top: 58px;
+
+      @media (max-width: 1365px) {
+        padding: 20px;
+      }
+
+      @media (max-width: 1199px) {
+        padding: 25px 15px;
+      }
+
+      @media (max-width: 576px) {
+        padding: 10px;
+        width: calc(100% - 45px);
+      }
+    }
+  }
+
+  .MuiButton-root {
+    border-radius: 40px;
+    text-transform: capitalize;
+    font-size: 14px;
+    box-shadow: none;
+  }
+
+  .MuiCardContent-root {
+    &:last-child {
+      padding-bottom: 0px;
+    }
+  }
+
+  a.MuiChip-root {
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .MuiTab-root.Mui-selected {
+    color: $headingColor;
+  }
+
+  .MuiTabs-indicator {
+    background-color: $headingColor;
+  }
+
+  .mt-0 {
+    margin-top: 0px;
+  }
+
+  .p-0 {
+    padding: 0px;
+  }
+
+  .mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .textButton {
+    padding-left: 0px;
+    padding-right: 0px;
+    min-width: auto;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+
+  .plainText.MuiChip-root {
+    height: auto;
+    border: none;
+    font-size: 14px;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+
+  .MuiInputLabel-root {
+    color: rgb(73 73 73 / 70%);
+  }
+
+  .MuiInput-root {
+    &::before {
+      border-bottom: 1px solid #e7ebef;
+    }
+
+    &:hover:not(.Mui-disabled, .Mui-error):before {
+      border-bottom: 1px solid #494949;
+    }
+
+    &:after {
+      border-width: 1px;
+    }
+
+    .MuiInput-input {
+      &:focus {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .pl-0 {
+    padding-left: 0px;
+  }
+
+  .pl-0 {
+    .MuiChip-label {
+      padding-left: 0px;
+    }
+  }
+}
+
+.bulletList {
+  li {
+    align-items: flex-start;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    &::before {
+      background: #494949;
+      border-radius: 50%;
+      content: "";
+      height: 6px;
+      position: absolute;
+      width: 6px;
+      margin: 7px 0 0px -15px;
+    }
+  }
+}
+
+.detailsWrapper {
+  label.MuiTypography-root {
+    margin-bottom: 5px;
+    display: block;
+    color: #494342;
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 70%;
+  }
+
+  h5.MuiTypography-root {
+    color: #494949;
+    word-wrap: break-word;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  background: #dbe2e8;
+}
+
+.flexbox {
+  @include flexbox;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.justifyContentBetween {
+  justify-content: space-between;
+}
+
+.justifyContentBetween {
+  justify-content: space-between;
+}
+
+.fullwidth,
+.fullWidth {
+  width: 100%;
+}
+
+.flexWrap {
+  flex-wrap: wrap;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.popupWrapper {
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-bottom: 2%;
+
+  @media (max-width: 767px) {
+    padding: 15px;
+  }
+}
+
+.popupScrollbar {
+  max-height: 95vh;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar-track-piece:end {
+    margin-bottom: 18px;
+  }
+
+  &::-webkit-scrollbar-track-piece:start {
+    margin-top: 18px;
+  }
+}
+
+.tabContentWrapper {
+  padding: 30px 0;
+  @media (max-width: 600px) {
+    padding: 10px 0;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.ratingBox {
+  svg {
+    color: #0c1e59;
+    margin: 0 1px;
+  }
+
+  p {
+    margin-left: 5px;
+  }
+}
+
+.dialogWrapper {
+  h2.MuiTypography-root {
+    margin-bottom: 0px;
+    padding-bottom: 8px;
+  }
+
+  .dialogueActions {
+    padding: 0px 24px 18px;
+
+    .grayButton {
+      background: #dbe2e8;
+      color: #494949;
+      box-shadow: none;
+    }
+  }
+}
+
+.btnBorderRadius {
+  border-radius: 40px;
+}
+
+.chipContainer {
+  .customChip {
+    margin-right: 5px;
+    border: 1px solid gray;
+  }
+}
+
+.pRelative {
+  position: relative;
+}
